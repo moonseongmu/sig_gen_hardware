@@ -8,6 +8,7 @@
 		(title "Power")
 		(date "2026-11-12")
 		(rev "0.1")
+		(comment 1 "Licensed under CERN-OHL-S V2")
 	)
 	(lib_symbols
 		(symbol "Connector:Barrel_Jack_Switch"
@@ -1005,160 +1006,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMF26A"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SMF26A"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMF"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/doc?85881"
-				(at -1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 26Vrwm, SMF"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode TVS voltage suppressor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*SMF*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SMF26A_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMF26A_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_FET:AO3401A"
 			(pin_names
 				(hide yes)
@@ -1842,6 +1689,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "symbol_lib:SMF26CA"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMF26CA"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123F"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smf-datasheet?assetguid=7eb8a5b6-bdd0-4561-8f19-0c3cc6f9b2af"
+				(at 0 13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "26Vwrm, 200W Discrete Bidirectional TVS Diode, SOD-123F"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "transient voltage suppressor thyrector transil"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D?SOD?323*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMF26CA_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMF26CA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "600mA\n"
 		(exclude_from_sim no)
@@ -1858,6 +1883,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10234fb6-7312-4899-9725-676b4606f189")
+	)
+	(junction
+		(at 134.62 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "106fb8e1-2b14-4910-a266-f6262426f826")
 	)
 	(junction
 		(at 96.52 99.06)
@@ -1878,12 +1909,6 @@
 		(uuid "47611a64-1e50-42aa-b8ad-6bec3ae9d24e")
 	)
 	(junction
-		(at 114.3 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4872a757-2b8f-4fd1-8315-04e299598f86")
-	)
-	(junction
 		(at 106.68 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1902,6 +1927,12 @@
 		(uuid "8f972a51-e274-47be-9125-0359ae9a639f")
 	)
 	(junction
+		(at 127 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cd038bb-51cb-4f30-82d9-d6c7f636c497")
+	)
+	(junction
 		(at 80.01 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1914,13 +1945,7 @@
 		(uuid "c3913e3d-309f-4040-a453-1918d7e07f38")
 	)
 	(junction
-		(at 121.92 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e9b05510-6dae-43b2-ae89-039dec565717")
-	)
-	(junction
-		(at 129.54 80.01)
+		(at 139.7 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee79706f-58f6-4057-a537-0f47c3307fd6")
@@ -1930,26 +1955,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f53e1cf4-9b88-4810-8c1e-d0c711b22446")
-	)
-	(wire
-		(pts
-			(xy 121.92 80.01) (xy 179.07 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "031b6c42-ff7a-42c5-9644-6428405e8c1b")
-	)
-	(wire
-		(pts
-			(xy 114.3 80.01) (xy 114.3 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bc851da-20f5-4d14-b245-252fdc2dfae9")
 	)
 	(wire
 		(pts
@@ -1973,6 +1978,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 80.01) (xy 179.07 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10509837-9779-4c97-842f-9c643a934cb4")
+	)
+	(wire
+		(pts
 			(xy 93.98 99.06) (xy 93.98 91.44)
 		)
 		(stroke
@@ -1993,6 +2008,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2091d63a-154d-47d7-8348-6c0d1569070a")
+	)
+	(wire
+		(pts
 			(xy 82.55 99.06) (xy 93.98 99.06)
 		)
 		(stroke
@@ -2003,7 +2028,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 80.01) (xy 129.54 83.82)
+			(xy 139.7 80.01) (xy 139.7 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2033,6 +2058,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 80.01) (xy 127 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6769a4fa-7721-456b-bafd-138ce6abe44d")
+	)
+	(wire
+		(pts
 			(xy 179.07 80.01) (xy 179.07 107.95)
 		)
 		(stroke
@@ -2043,7 +2078,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 80.01) (xy 114.3 80.01)
+			(xy 111.76 80.01) (xy 127 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2053,7 +2088,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 106.68 99.06)
+			(xy 139.7 99.06) (xy 106.68 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2063,7 +2098,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 91.44) (xy 129.54 99.06)
+			(xy 139.7 91.44) (xy 139.7 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2083,23 +2118,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 88.9) (xy 106.68 88.9)
+			(xy 106.68 88.9) (xy 127 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b78b6ddd-2075-4c0a-9abe-582035cc1b22")
-	)
-	(wire
-		(pts
-			(xy 114.3 80.01) (xy 121.92 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2f5a7ae-c999-4ca9-b03e-9e53817d8a19")
 	)
 	(wire
 		(pts
@@ -2181,6 +2206,36 @@
 		)
 		(uuid "ff031a77-8cd5-4ffe-820a-4cc4c45fe2b2")
 	)
+	(label "24_tvs"
+		(at 90.17 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46bce41c-866d-4a35-97a9-46c8574b6326")
+	)
+	(label "24_rpp_zener"
+		(at 111.76 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9080f125-33d2-4e93-9db6-8337a22af4db")
+	)
+	(label "24_in"
+		(at 81.28 80.01 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd0b1c2b-b76a-4a99-a0d3-32716be0bb87")
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 96.52 99.06 180)
@@ -2260,8 +2315,90 @@
 		)
 	)
 	(symbol
+		(lib_id "symbol_lib:SMF26CA")
+		(at 93.98 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25920990-f77e-4e23-9425-ebcabe354473")
+		(property "Reference" "D2"
+			(at 96.52 86.3599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMF26CA"
+			(at 96.52 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 99.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smf-datasheet?assetguid=7eb8a5b6-bdd0-4561-8f19-0c3cc6f9b2af"
+			(at 80.518 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26Vwrm, 200W Discrete Bidirectional TVS Diode, SOD-123F"
+			(at 86.36 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4fa303f5-bda9-4e55-9370-d5972d9f6c8e")
+		)
+		(pin "1"
+			(uuid "5f9fd88e-2589-4d53-bd27-ebe0e56ddd4c")
+		)
+		(instances
+			(project "sig_gen"
+				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 129.54 87.63 0)
+		(at 139.7 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2271,8 +2408,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25e1903a-385f-4f8a-93aa-a25840351c79")
-		(property "Reference" "C21"
-			(at 133.35 85.4709 0)
+		(property "Reference" "C23"
+			(at 143.51 85.4709 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2283,7 +2420,7 @@
 			)
 		)
 		(property "Value" "56u"
-			(at 133.35 88.0109 0)
+			(at 143.51 88.0109 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2294,7 +2431,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 130.5052 91.44 0)
+			(at 140.6652 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2305,7 +2442,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/ZLQ.pdf"
-			(at 129.54 87.63 0)
+			(at 139.7 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2316,7 +2453,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 129.54 87.63 0)
+			(at 139.7 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2335,7 +2472,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2343,7 +2480,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 121.92 80.01 0)
+		(at 134.62 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2354,7 +2491,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ff51ced-ebbe-4670-8624-7e8588e31746")
 		(property "Reference" "#FLG03"
-			(at 121.92 78.105 0)
+			(at 134.62 78.105 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2365,7 +2502,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 121.92 74.93 0)
+			(at 134.62 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2375,7 +2512,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 80.01 0)
+			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2386,7 +2523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 80.01 0)
+			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2397,7 +2534,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 121.92 80.01 0)
+			(at 134.62 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2504,7 +2641,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BZT52Bxx")
-		(at 114.3 85.09 270)
+		(at 127 85.09 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2515,7 +2652,7 @@
 		(fields_autoplaced yes)
 		(uuid "6235a2c5-5127-4f10-8953-3583cf8e5075")
 		(property "Reference" "D3"
-			(at 116.84 83.8199 90)
+			(at 129.54 83.8199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2526,7 +2663,7 @@
 			)
 		)
 		(property "Value" "BZT52C10"
-			(at 116.84 86.3599 90)
+			(at 129.54 86.3599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2537,7 +2674,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 109.855 85.09 0)
+			(at 122.555 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2548,7 +2685,7 @@
 			)
 		)
 		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-			(at 114.3 85.09 0)
+			(at 127 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2559,7 +2696,7 @@
 			)
 		)
 		(property "Description" "500mW Zener Diode, SOD-123F"
-			(at 114.3 85.09 0)
+			(at 127 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2596,7 +2733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74d0e01f-f813-4ba3-9030-b4fd1d933875")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR050"
 			(at 140.97 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -2656,89 +2793,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMF26A")
-		(at 93.98 87.63 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9337b5c7-21d7-40b7-ac64-f4cd9c7ba833")
-		(property "Reference" "D2"
-			(at 96.52 86.3599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMF26A"
-			(at 96.52 88.8999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMF"
-			(at 88.9 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?85881"
-			(at 93.98 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 26Vrwm, SMF"
-			(at 93.98 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "05519b9a-6ea0-488d-ba4c-b14519cc50ef")
-		)
-		(pin "1"
-			(uuid "b5c8510a-34e1-4bff-9660-cf59c67dfb57")
-		)
-		(instances
-			(project "sig_gen"
-				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d"
-					(reference "D2")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -2756,7 +2811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7a01cf3-45f2-4a9f-aa95-532a1db51273")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR049"
 			(at 82.55 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2816,7 +2871,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d"
-					(reference "#PWR044")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -2854,7 +2909,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprint_lib:XFCN PTF-77 Fuseholder 5x20"
+		(property "Footprint" "footprint_lib:XFCN XF-155 SMD Fuseholder 2410"
 			(at 85.09 81.788 90)
 			(hide yes)
 			(show_name no)

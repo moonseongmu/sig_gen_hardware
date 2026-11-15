@@ -8,6 +8,7 @@
 		(title "Microcontroller Power")
 		(date "2026-11-12")
 		(rev "0.1")
+		(comment 1 "Licensed under CERN-OHL-S V2")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2772,6 +2773,46 @@
 		)
 		(uuid "fea2eada-a39a-4dd9-9dae-2c02c093c2da")
 	)
+	(label "+4_fb"
+		(at 118.11 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bfa6b28-acc5-422e-a2b3-ed646d40d02c")
+	)
+	(label "4V_Vin"
+		(at 69.85 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8626e795-c47d-452c-9265-36444e99f1a3")
+	)
+	(label "+4_sw"
+		(at 104.14 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b507ece7-76c6-4d18-9ad7-b00556ce8e25")
+	)
+	(label "+4_cb"
+		(at 105.41 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf2b4a36-1df5-4088-8b4b-cf28ea0e050d")
+	)
 	(hierarchical_label "24V_in"
 		(shape input)
 		(at 33.02 78.74 180)
@@ -2988,7 +3029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-40xx_HandSoldering"
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering"
 			(at 125.73 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -2999,7 +3040,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/ap/specSheet?pn=LCXND6060WHL470MMG0J"
 			(at 125.73 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3048,7 +3089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bc1adb8-461c-42ce-8924-0e2102735b7a")
-		(property "Reference" "C41"
+		(property "Reference" "C43"
 			(at 238.76 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3112,7 +3153,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C41")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -3286,7 +3327,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "177d6d5c-3cbb-4f93-9945-ea98fb1178ed")
-		(property "Reference" "C38"
+		(property "Reference" "C40"
 			(at 151.384 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3350,7 +3391,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C38")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -3368,7 +3409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cba0b78-da1e-430a-9ead-5fa1b4956965")
-		(property "Reference" "C37"
+		(property "Reference" "C39"
 			(at 114.3 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +3431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 111.76 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -3432,7 +3473,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C37")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -3450,7 +3491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e192978-d2fd-490c-946e-0d262d155fea")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR064"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3510,7 +3551,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR059")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -3710,7 +3751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53d0f017-f3cc-45f0-9493-ab09aba52153")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR062"
 			(at 231.14 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -3770,7 +3811,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR057")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3788,7 +3829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5602d4d1-c686-4612-bc3d-5a22fe30bcbc")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR063"
 			(at 232.41 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -3848,7 +3889,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR058")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -3866,7 +3907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e89aa45-2e05-4566-9c8b-b4f47a63d85d")
-		(property "Reference" "C40"
+		(property "Reference" "C42"
 			(at 212.09 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3930,7 +3971,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C40")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -4030,7 +4071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b40c1c6-3d5d-4a63-8e71-4898980fd367")
-		(property "Reference" "C39"
+		(property "Reference" "C41"
 			(at 212.09 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4094,7 +4135,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C39")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -4194,7 +4235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "825bc4ae-1f3c-4d3f-b9d9-d8d7f52ae4a1")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR060"
 			(at 107.95 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4254,7 +4295,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR055")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4696,7 +4737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f40824-73e5-4043-9b86-a45f106b6aa7")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR065"
 			(at 241.3 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4756,7 +4797,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR060")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4774,7 +4815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afa862d6-5772-4365-af19-5b65c0b161c8")
-		(property "Reference" "C36"
+		(property "Reference" "C38"
 			(at 66.04 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4838,7 +4879,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C36")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -4935,7 +4976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4145c9d-9a21-451e-a678-914d6c907c0c")
-		(property "Reference" "C42"
+		(property "Reference" "C44"
 			(at 241.3 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4999,7 +5040,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "C42")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -5017,7 +5058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0957eb-2b87-49e9-b850-0782874f42d6")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR061"
 			(at 167.64 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5077,7 +5118,7 @@
 		(instances
 			(project "sig_gen"
 				(path "/c3501af9-4f83-4307-8a2b-37ad4e78b874/05e78775-14fe-4fc1-9c4e-980c3bee1e8d/f2339d87-5b10-4430-9bbf-7074ec61baa4"
-					(reference "#PWR056")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)

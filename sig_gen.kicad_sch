@@ -8,6 +8,7 @@
 		(title "Signal Generator")
 		(date "2026-11-12")
 		(rev "0.1")
+		(comment 1 "Licensed under CERN-OHL-S V2")
 	)
 	(lib_symbols)
 	(wire

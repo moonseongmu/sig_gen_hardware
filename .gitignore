@@ -2,3 +2,4 @@
 *simulation*
 *.lck
 *.kicad_prl
+_restore*
