@@ -6,12 +6,63 @@
 	(paper "A4")
 	(title_block
 		(title "Signal Generator")
-		(date "2026-11-05")
+		(date "2026-11-12")
 		(rev "0.1")
+		(comment 1 "Licensed under CERN-OHL-S V2")
 	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 99.06 96.52) (xy 123.19 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eca1e6f-b626-4db9-9954-78ff3823da0a")
+	)
+	(wire
+		(pts
+			(xy 99.06 106.68) (xy 123.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5053b92f-50e8-4502-82c0-b7849f25b48e")
+	)
+	(wire
+		(pts
+			(xy 99.06 101.6) (xy 123.19 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b217a3da-e02e-4717-8cbc-f276300862e0")
+	)
+	(wire
+		(pts
+			(xy 99.06 91.44) (xy 123.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6002600-a87b-4292-98a0-c7703d87a626")
+	)
+	(wire
+		(pts
+			(xy 99.06 86.36) (xy 123.19 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2881aab-2306-4b68-9cd2-58bd7a423260")
+	)
 	(sheet
-		(at 196.85 34.29)
+		(at 198.12 82.55)
 		(size 41.91 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27,7 +78,7 @@
 		)
 		(uuid "05e78775-14fe-4fc1-9c4e-980c3bee1e8d")
 		(property "Sheetname" "power"
-			(at 196.85 33.5784 0)
+			(at 198.12 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38,7 +89,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 196.85 64.0846 0)
+			(at 198.12 112.3446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -57,7 +108,7 @@
 		)
 	)
 	(sheet
-		(at 121.92 34.29)
+		(at 123.19 82.55)
 		(size 49.53 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -73,7 +124,7 @@
 		)
 		(uuid "34160dc8-e7d0-44b7-af99-4be1ae2722ea")
 		(property "Sheetname" "output_conditioning"
-			(at 121.92 33.5784 0)
+			(at 123.19 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -84,7 +135,7 @@
 			)
 		)
 		(property "Sheetfile" "output_conditioning.kicad_sch"
-			(at 121.92 62.8146 0)
+			(at 123.19 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -92,6 +143,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "dac_out" input
+			(at 123.19 86.36 180)
+			(uuid "0baef1f8-60e1-432f-a0ba-07901bd126c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "pot_scl" input
+			(at 123.19 91.44 180)
+			(uuid "57f11b61-9bf6-44f6-9a74-9e80dd46ec78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "pot_sda" bidirectional
+			(at 123.19 96.52 180)
+			(uuid "ee7163b9-766b-4947-9a83-20a2a987bdb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "pot_shdn" input
+			(at 123.19 101.6 180)
+			(uuid "8e64b130-575c-4c3b-a8a0-116cfe76ed6e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "pot_wlat" input
+			(at 123.19 106.68 180)
+			(uuid "e35aec32-e31d-44dd-9013-04ff9103bb89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -103,7 +204,7 @@
 		)
 	)
 	(sheet
-		(at 46.99 34.29)
+		(at 48.26 82.55)
 		(size 50.8 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -119,7 +220,7 @@
 		)
 		(uuid "a745d700-bcb1-4932-99ed-25b65363395e")
 		(property "Sheetname" "microcontroller"
-			(at 46.99 33.5784 0)
+			(at 48.26 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -130,7 +231,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 46.99 62.8146 0)
+			(at 48.26 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -138,6 +239,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "dac_out" output
+			(at 99.06 86.36 0)
+			(uuid "2b59836b-3157-42bc-ae64-2b837c5a7657")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "pot_scl" output
+			(at 99.06 91.44 0)
+			(uuid "31ee825e-2bce-4bec-b38a-3d99b93d18c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "pot_sda" bidirectional
+			(at 99.06 96.52 0)
+			(uuid "e4c8f99b-0777-4655-9d4b-82963bca847f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "pot_shdn" output
+			(at 99.06 101.6 0)
+			(uuid "13f153fe-c123-4554-abc5-a6d3da1d0450")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "pot_wlat" output
+			(at 99.06 106.68 0)
+			(uuid "3858b842-f215-40f8-b5fb-e67c22afb7ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

@@ -43,11 +43,11 @@
           "height": 1.27,
           "width": 2.54
         },
-        "silk_line_width": 0.1,
+        "silk_line_width": 0.15,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_thickness": 0.2,
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
@@ -60,16 +60,27 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.3,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.3,
+          "thermal_relief_spoke_width": 0.3
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.0,
+          "width": 0.34
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -114,7 +125,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -139,24 +150,24 @@
         "zones_intersect": "error"
       },
       "rules": {
-        "max_error": 0.005,
-        "min_clearance": 0.0,
+        "max_error": 0.0015,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.45,
+        "min_microvia_diameter": 0.25,
+        "min_microvia_drill": 0.15,
+        "min_resolved_spokes": 1,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.4,
+        "solder_mask_to_copper_clearance": 0.09,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -206,7 +217,18 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.7,
+        1.0,
+        1.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -233,7 +255,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -519,6 +550,86 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "GND",
+        "pcb_color": "rgb(180, 180, 180)",
+        "priority": 1,
+        "schematic_color": "rgb(180, 180, 180)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.29,
+        "name": "USB",
+        "pcb_color": "rgb(255, 122, 68)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 122, 68)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "analog",
+        "pcb_color": "rgb(255, 11, 250)",
+        "priority": 4,
+        "schematic_color": "rgb(255, 11, 250)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "gpio",
+        "pcb_color": "rgb(18, 155, 156)",
+        "priority": 3,
+        "schematic_color": "rgb(18, 155, 156)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "i2c",
+        "pcb_color": "rgb(147, 101, 10)",
+        "priority": 6,
+        "schematic_color": "rgb(147, 101, 10)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "power",
+        "pcb_color": "rgb(255, 25, 107)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 25, 107)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "spi",
+        "pcb_color": "rgb(158, 25, 255)",
+        "priority": 5,
+        "schematic_color": "rgb(158, 25, 255)",
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -526,13 +637,158 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "i2c",
+        "pattern": "/microcontroller/pot*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/*out*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/hp*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/lp*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/q*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/buf*"
+      },
+      {
+        "netclass": "spi",
+        "pattern": "/microcontroller/dac_s*"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/PC*"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/PD*"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/power*"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+13V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "-13V"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+24V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "-12V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+3.3VA"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+4V"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/interaction/user*"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/user*"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/boot0"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/nrst"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/microcontroller/dac_out"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/microcontroller/(dac_vout|mcu_dac_out)"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/microcontroller/dac_vrefio"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/microcontroller/mvu_vref+"
+      },
+      {
+        "netclass": "power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/microcontroller/usb*"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/microcontroller/vcap(1|2)"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/microcontroller/vbus*"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/sw(clk|dio)"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/swo"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/uart*"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/output_conditioning/amp_-"
+      },
+      {
+        "netclass": "gpio",
+        "pattern": "/microcontroller/osc_in"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "fab_out/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -568,7 +824,7 @@
         },
         {
           "group_by": false,
-          "label": "Qty",
+          "label": "Quantity",
           "name": "${QUANTITY}",
           "show": true
         },
@@ -582,19 +838,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -606,13 +862,67 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part Number",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacture Part Number",
+          "name": "Manufacture Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -665,7 +975,7 @@
         "uuid": "c3501af9-4f83-4307-8a2b-37ad4e78b874"
       }
     ],
-    "used_designators": "#FLG1-8,#PWR1-69,C1-52,D1-13,F1,J1-4,L1-6,Q1-2,R1-44,SW1-4,TP1-11,U1-20,X1,Y1-2",
+    "used_designators": "#FLG1-9,#PWR1-78,C1-52,D1-22,F1,J1-5,L1-6,Q1-8,R1-52,SW1-6,TP1-33,U1-20,X1-2,Y1-2",
     "variants": []
   },
   "sheets": [
@@ -692,6 +1002,10 @@
     [
       "f2339d87-5b10-4430-9bbf-7074ec61baa4",
       "mcu_supply"
+    ],
+    [
+      "4b3ed8ee-0bb8-4eb5-b32e-65dba6544144",
+      "interaction"
     ]
   ],
   "text_variables": {},
