@@ -1915,7 +1915,7 @@
 		(uuid "79b52c68-05d8-40bd-885c-2899892101fe")
 	)
 	(junction
-		(at 140.97 80.01)
+		(at 149.86 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8aa65e1a-fe60-4253-aa3d-10e231ef51d3")
@@ -1945,7 +1945,7 @@
 		(uuid "c3913e3d-309f-4040-a453-1918d7e07f38")
 	)
 	(junction
-		(at 139.7 80.01)
+		(at 143.51 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee79706f-58f6-4057-a537-0f47c3307fd6")
@@ -2028,7 +2028,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 80.01) (xy 139.7 83.82)
+			(xy 143.51 80.01) (xy 143.51 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2088,7 +2088,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 99.06) (xy 106.68 99.06)
+			(xy 143.51 99.06) (xy 106.68 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2098,7 +2098,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 91.44) (xy 139.7 99.06)
+			(xy 143.51 91.44) (xy 143.51 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2381,6 +2381,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C19077516"
+			(at 93.98 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "SMF26CA"
+			(at 93.98 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "R+O"
+			(at 93.98 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4fa303f5-bda9-4e55-9370-d5972d9f6c8e")
 		)
@@ -2398,7 +2431,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 139.7 87.63 0)
+		(at 143.51 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2409,7 +2442,7 @@
 		(fields_autoplaced yes)
 		(uuid "25e1903a-385f-4f8a-93aa-a25840351c79")
 		(property "Reference" "C23"
-			(at 143.51 85.4709 0)
+			(at 147.32 85.4709 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2419,8 +2452,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56u"
-			(at 143.51 88.0109 0)
+		(property "Value" "100u"
+			(at 147.32 88.0109 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2430,8 +2463,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 140.6652 91.44 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 144.4752 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2441,8 +2474,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/ZLQ.pdf"
-			(at 139.7 87.63 0)
+		(property "Datasheet" "https://www.nichicon.com/getmedia/3068cdbf-f7d6-473a-93b1-5f6007425b00/e-uwt.pdf"
+			(at 143.51 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2453,7 +2486,40 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 139.7 87.63 0)
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125975"
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "UWT1V101MCL1GS"
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nichicon"
+			(at 143.51 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2621,6 +2687,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C720557"
+			(at 72.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "DC-005-A200"
+			(at 72.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 72.39 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "446741cd-8c4f-4e0b-a764-fb6e997cbff7")
 		)
@@ -2706,6 +2805,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C19077408"
+			(at 127 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "BZT52C10"
+			(at 127 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "R+O"
+			(at 127 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c64554b2-fc52-4844-977c-7616e41d79db")
 		)
@@ -2723,7 +2855,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 140.97 80.01 0)
+		(at 149.86 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2734,7 +2866,7 @@
 		(fields_autoplaced yes)
 		(uuid "74d0e01f-f813-4ba3-9030-b4fd1d933875")
 		(property "Reference" "#PWR050"
-			(at 140.97 83.82 0)
+			(at 149.86 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2745,7 +2877,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 140.97 74.93 0)
+			(at 149.86 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2755,7 +2887,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 80.01 0)
+			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2766,7 +2898,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 80.01 0)
+			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2777,7 +2909,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 140.97 80.01 0)
+			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2942,6 +3074,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C41371860"
+			(at 85.09 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "XF-155"
+			(at 85.09 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XFCN"
+			(at 85.09 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ae4afe1-8fac-4158-a852-9611dbdc0a90")
 		)
@@ -3014,6 +3179,39 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17513"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "0805W8F1001T5E"
+			(at 106.68 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 106.68 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -3107,6 +3305,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C15127"
+			(at 106.68 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" "AO3401A"
+			(at 106.68 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "AOS"
+			(at 106.68 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1637e659-3a47-47a2-bc42-64f231e861ac")
 		)
@@ -3181,6 +3412,39 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 154.94 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 154.94 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacture Part Number" ""
+			(at 154.94 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 154.94 80.01 0)
 			(hide yes)
 			(show_name no)
